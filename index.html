@@ -1,29 +1,230 @@
-🧪 QA Login Test
-Proyecto de automatización de pruebas de login con Selenium + Pytest
-Desarrollado por Santiago Valencia Cortes
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Tester Portfolio | Santiago Valencia</title>
 
-🚀 Descripción del proyecto
-Este proyecto automatiza el proceso de inicio de sesión en una página web de ejemplo.
-Su objetivo es demostrar habilidades en Testing Automatizado usando herramientas modernas como Selenium WebDriver y Pytest.
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #38bdf8;
+        }
 
-El flujo probado incluye:
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            color: var(--dark);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
 
-Abrir el navegador (Google Chrome)
-Localizar los campos de usuario y contraseña
-Enviar credenciales simuladas
-Verificar la respuesta esperada del sistema
-🧠 Tecnologías utilizadas
-Tecnología	Descripción
-🐍 Python 3.12	Lenguaje principal del proyecto
-🌐 Selenium	Automatización del navegador
-🧪 Pytest	Framework para estructurar y ejecutar pruebas
-🧰 VS Code	Editor de código utilizado
-🧩 Estructura del proyecto
-qa-login-test/
-│
-├── tests/
-│   └── test_login_pytest.py     # Script principal de prueba
-│
-├── .gitignore                   # Archivos y carpetas ignoradas por git
-├── requirements.txt             # Dependencias del proyecto
-└── README.md                    # Documentación del proyecto
+        header {
+            background: white;
+            padding: 1rem 10%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: bold;
+        }
+
+        #hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            padding: 0 20px;
+        }
+
+        #hero span {
+            color: var(--accent);
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .project-box h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Santiago<span>.QA</span></div>
+        <ul>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <h1>Hola, soy <span>QA Tester</span></h1>
+    <p>Experiencia en pruebas manuales, testing de APIs y automatización con Selenium y Pytest.</p>
+    <a href="#projects" class="btn">Ver Proyectos</a>
+</section>
+
+<section id="skills">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>Manual Testing</h3>
+            <p>Casos de prueba, reporte de bugs, pruebas funcionales y de regresión.</p>
+        </div>
+        <div class="skill-card">
+            <h3>Automation Testing</h3>
+            <p>Selenium WebDriver, Pytest, pruebas E2E.</p>
+        </div>
+        <div class="skill-card">
+            <h3>API Testing</h3>
+            <p>Postman, validación de status codes y respuestas JSON.</p>
+        </div>
+        <div class="skill-card">
+            <h3>Herramientas</h3>
+            <p>GitHub, Postman, Google Sheets.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Proyectos</h2>
+    <div class="projects-container">
+
+        <div class="project-box">
+            <h3>Automation Testing – Selenium & Pytest</h3>
+            <p>
+                Proyecto personal de automatización de pruebas del flujo de inicio de sesión,
+                utilizando Selenium WebDriver y Pytest para validar el comportamiento esperado del sistema.
+            </p>
+            <a href="https://github.com/TU-USUARIO/qa-login-test" target="_blank">Ver en GitHub</a>
+        </div>
+
+        <div class="project-box">
+            <h3>Urban Routes – QA Manual</h3>
+            <p>
+                Pruebas manuales realizadas sobre una aplicación web de transporte,
+                validando flujos principales y reportando bugs funcionales.
+            </p>
+            <a href="#">Documentación del proyecto</a>
+        </div>
+
+        <div class="project-box">
+            <h3>API Testing con Postman</h3>
+            <p>
+                Validación de endpoints REST mediante pruebas funcionales,
+                verificación de status codes y estructura de respuestas JSON.
+            </p>
+            <a href="#">Ver colección</a>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>Contacto</h2>
+    <p>
+        <a href="https://www.linkedin.com/in/TU-LINKEDIN" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/TU-USUARIO" target="_blank">GitHub</a>
+    </p>
+    <p>&copy; 2026 Santiago Valencia Cortes</p>
+</footer>
+
+</body>
+</html>
