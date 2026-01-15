@@ -3,144 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QA Engineer Portfolio | Santiago Valencia Cortes</title>
+    <title>Santiago Valencia | QA Tester</title>
 
     <style>
-        :root {
-            --primary: #2563eb;
-            --dark: #1e293b;
-            --light: #f8fafc;
-            --accent: #38bdf8;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            color: var(--dark);
-            background-color: var(--light);
+            background-color: #0f172a;
+            color: #e5e7eb;
             line-height: 1.6;
         }
 
         header {
-            background: white;
-            padding: 1rem 10%;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e293b, #020617);
         }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        header h1 {
+            font-size: 2.5rem;
         }
 
-        .logo {
-            font-weight: bold;
+        header p {
             font-size: 1.2rem;
-        }
-
-        .logo span {
-            color: var(--primary);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: bold;
+            margin-top: 10px;
+            color: #cbd5f5;
         }
 
         section {
-            padding: 60px 10%;
-            text-align: center;
+            padding: 50px 20px;
+            max-width: 1100px;
+            margin: auto;
         }
 
-        #hero {
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-            color: white;
-            padding: 0 20px;
-        }
-
-        #hero span {
-            color: var(--accent);
-        }
-
-        .btn {
-            margin-top: 20px;
-            padding: 10px 25px;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .skill-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-top: 4px solid var(--primary);
+        h2 {
+            margin-bottom: 25px;
+            border-bottom: 2px solid #2563eb;
+            display: inline-block;
+            padding-bottom: 5px;
         }
 
         .projects-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
 
         .project-box {
-            background: white;
-            padding: 25px;
+            background-color: #020617;
+            padding: 20px;
             border-radius: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s;
+        }
+
+        .project-box:hover {
+            transform: translateY(-5px);
         }
 
         .project-box h3 {
-            margin-top: 0;
-            color: var(--primary);
+            margin-bottom: 10px;
+            color: #60a5fa;
         }
 
-        .project-box a {
-            display: inline-block;
-            margin-top: 10px;
-            color: var(--primary);
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
             font-weight: bold;
-            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
         }
 
         footer {
-            background: var(--dark);
-            color: white;
-            padding: 40px;
+            background-color: #020617;
             text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
         }
 
         footer a {
-            color: var(--accent);
+            color: #60a5fa;
+            margin: 0 10px;
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -148,93 +109,37 @@
 <body>
 
 <header>
-    <nav>
-        <div class="logo">Santiago<span>.QA</span></div>
-        <ul>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+    <h1>Santiago Valencia Cortes</h1>
+    <p>QA Tester | Functional & API Testing</p>
 </header>
 
-<section id="hero">
-    <h1>Hola, soy <span>QA Engineer</span></h1>
-    <p>Especializado en testing manual, automatización de pruebas y testing de APIs.</p>
-    <a href="#projects" class="btn">Ver Proyectos</a>
-</section>
-
-<section id="about">
-    <h2>Sobre mí</h2>
-    <p>
-        QA Engineer con experiencia en pruebas funcionales, automatización y testing de APIs.
-        Enfocado en la calidad del software mediante análisis de requerimientos,
-        diseño de casos de prueba y detección de defectos.
-    </p>
-</section>
-
-<section id="skills">
-    <h2>Habilidades Técnicas</h2>
-    <div class="skills-grid">
-        <div class="skill-card">
-            <h3>Testing Manual</h3>
-            <p>Casos de prueba, pruebas funcionales, regresión, E2E.</p>
-        </div>
-        <div class="skill-card">
-            <h3>Automation</h3>
-            <p>Selenium, Playwright, Pytest.</p>
-        </div>
-        <div class="skill-card">
-            <h3>API Testing</h3>
-            <p>Postman, HTTP, JSON.</p>
-        </div>
-        <div class="skill-card">
-            <h3>Herramientas</h3>
-            <p>Git, GitHub, Jira, SQL básico.</p>
-        </div>
-    </div>
-</section>
-
 <section id="projects">
-    <h2>Proyectos Destacados</h2>
+    <h2>Proyectos</h2>
 
     <div class="projects-container">
 
-        <!-- QA LOGIN TEST -->
         <div class="project-box">
             <h3>QA Login Test – Selenium + Pytest</h3>
-            <p>
-                Automatización de pruebas funcionales para el flujo de inicio de sesión,
-                validando comportamiento esperado y manejo de errores.
-            </p>
-            <a href="https://docs.google.com/document/d/11QYT8k-kCqCC68Rfe2xxbf7cZYPF7K4BrdHyXW6AHt0/edit?usp=sharing" target="_blank">
-                Ver documentación completa
-            </a>
+            <p>Automatización de pruebas del flujo de login usando Selenium y Pytest.</p>
+            <button onclick="window.open('https://docs.google.com/document/d/11QYT8k-kCqCC68Rfe2xxbf7cZYPF7K4BrdHyXW6AHt0/edit?usp=sharing','_blank')">
+                Ver documentación
+            </button>
         </div>
 
-        <!-- URBAN ROUTES -->
         <div class="project-box">
             <h3>Urban Routes – QA Functional Testing</h3>
-            <p>
-                Pruebas funcionales end-to-end para una aplicación web de transporte.
-                Incluye diseño de casos de prueba, ejecución manual y reporte de bugs.
-            </p>
-            <a href="https://docs.google.com/document/d/1ffUoYr8w7rbwh5sf5sdbzzwI0b0xv_hTMcqhmWg7pRA/edit?usp=sharing" target="_blank">
-                Ver documentación completa
-            </a>
+            <p>Pruebas funcionales end-to-end para una aplicación web de transporte.</p>
+            <button onclick="window.open('https://docs.google.com/document/d/1ffUoYr8w7rbwh5sf5sdbzzwI0b0xv_hTMcqhmWg7pRA/edit?usp=sharing','_blank')">
+                Ver documentación
+            </button>
         </div>
 
-        <!-- API POSTMAN -->
         <div class="project-box">
             <h3>API Testing – Postman</h3>
-            <p>
-                Validación de una API REST mediante pruebas manuales y automatizadas
-                utilizando Postman, scripts y variables de entorno.
-            </p>
-            <a href="https://docs.google.com/document/d/1BWy6l4ia1bG9gBEbMGDQKRH0d7DoVVA5BPUuvobfbu4/edit?usp=sharing" target="_blank">
-                Ver documentación completa
-            </a>
+            <p>Validación de endpoints REST usando Postman.</p>
+            <button onclick="window.open('https://docs.google.com/document/d/1BWy6l4ia1bG9gBEbMGDQKRH0d7DoVVA5BPUuvobfbu4/edit?usp=sharing','_blank')">
+                Ver documentación
+            </button>
         </div>
 
     </div>
@@ -243,13 +148,16 @@
 <footer id="contact">
     <h2>Contacto</h2>
     <p>
-        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/santivacomecatronica" target="_blank">
+            LinkedIn
+        </a>
+        |
+        <a href="https://github.com/SantiagoSvc" target="_blank">
+            GitHub
+        </a>
     </p>
-    <p>&copy; 2026 Santiago Valencia Cortes</p>
+    <p style="margin-top:10px;">&copy; 2026 Santiago Valencia Cortes</p>
 </footer>
 
 </body>
 </html>
-
-
